@@ -4,7 +4,7 @@ describe 'As a User' do
   it 'Can search for foods and see list of food' do 
     visit "/"
 
-    fill_in "sweet potatoes"
+    fill_in with: "sweet potatoes"
 
     click_on "Search"
 
