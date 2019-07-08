@@ -12,9 +12,10 @@ class FoodsFacade
   def foods
     response = food_service.get 
     body = JSON.parse(response.body, symbolize_names: true)
-    body[:list][:item].each do |food_item|
+    list = body[:list][:item].map do |food_item|
       Food.new(food_item) 
     end
+    list.take(10)
   end
 
   private 
