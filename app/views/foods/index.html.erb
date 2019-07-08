@@ -1,0 +1,12 @@
+<h2>Search Results </h2>
+
+<h3><% facade.food_count %> Results Found </h3>
+<section class='food-list'>
+<% facade.foods.each do |food| %>
+  <%= food.ndb_number %>
+  <%= food.food_name %>
+  <%= food.food_group %>
+  <%= food.data_source %>
+  <%= food.manufacturer %>
+<% end %>
+  
