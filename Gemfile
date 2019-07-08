@@ -16,12 +16,12 @@ gem 'faraday'
 group :development, :test do
   gem 'pry'
   gem 'awesome_print'
+  gem 'vcr'
 end
 
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
-  gem 'vcr'
 end
 
 group :development do

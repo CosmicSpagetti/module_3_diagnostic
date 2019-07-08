@@ -2,11 +2,12 @@
 
 <h3><% facade.food_count %> Results Found </h3>
 <section class='food-list'>
-<% facade.foods.each do |food| %>
-  <%= food.ndb_number %>
-  <%= food.food_name %>
-  <%= food.food_group %>
-  <%= food.data_source %>
-  <%= food.manufacturer %>
+<ul><% facade.foods.each do |food| %>>
+  <li class='food-list-food'> NDB Number: <%= food.ndb_number %></li>
+  <li class='food-list-food'> Food Name: <%= food.food_name %></li>
+  <li class='food-list-food'> Food Group: <%= food.food_group %></li>
+  <li class='food-list-food'> Data Source: <%= food.data_source %></li>
+  <li class='food-list-food'> Manufacturer: <%= food.manufacturer %></li>
+  </section>
 <% end %>
   
