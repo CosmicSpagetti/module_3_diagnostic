@@ -1,13 +1,14 @@
 <h2>Search Results </h2>
 
-<h3><% facade.food_count %> Results Found </h3>
+
 <section class='food-list'>
-<ul><% facade.foods.each do |food| %>>
+ <h3><%= facade.food_count %> Results Found </h3>
+<ul><% facade.foods.each do |food| %></ul>
   <li class='food-list-food'> NDB Number: <%= food.ndb_number %></li>
   <li class='food-list-food'> Food Name: <%= food.food_name %></li>
   <li class='food-list-food'> Food Group: <%= food.food_group %></li>
   <li class='food-list-food'> Data Source: <%= food.data_source %></li>
-  <li class='food-list-food'> Manufacturer: <%= food.manufacturer %></li>
+  <li class='food-list-food'> Manufacturer: <%= food.manufacturer %></li><
   </section>
 <% end %>
   
